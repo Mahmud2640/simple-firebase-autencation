@@ -15,9 +15,11 @@ function App() {
       console.log(user);
     })
     .catch(error => {
-      console.log('error', error);
+      console.error('error', error);
     });
   }
+
+
   return (
     <div className="App">
       <button onClick={handleGoogleSingIn}>Google Sing In</button>
